@@ -1,5 +1,9 @@
 # Learn Terraform Modules Create
+This repo is a companion repo to the [Use Modules from the Registry tutorial](https://developer.hashicorp.com/terraform/tutorials/modules/module-use)
 
-Learn what Terraform modules are and when to create them.
+## Goal
+* Use the modules
+  * [vpc](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest) &
+  * [ec2-instance](https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest)
 
-This repo is a companion repo to the [Use Modules from the Registry tutorial](https://developer.hashicorp.com/terraform/tutorials/modules/module-use), containing Terraform configuration files to provision infrastructure using the `vpc` and `ec2-instances` modules.
+* TODO:
