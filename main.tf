@@ -30,7 +30,7 @@ module "vpc" {
 module "ec2_instances" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "4.3.0"
-  count   = 2
+  count   = 2   # Terraform module's meta argument
 
   name = "my-ec2-cluster"
 
