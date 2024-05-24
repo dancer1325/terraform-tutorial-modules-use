@@ -19,7 +19,10 @@ This repo is a companion repo to the [Use Modules from the Registry tutorial](ht
 * `terraform apply`
   * Problems:
     * Problem1: No output got
-      * Solution: TODO:
+      * Solution: Update aws.version & `terraform init -upgrade`
+    * Problem2: Unsupported arguments 'enable_classiclink', 'enable_classiclink_dns_support'
+      * Solution: Update modules.vpc & modules.ec2 versions
+* `terraform destroy`
 
 ## Notes:
 * 'variables.tf'
@@ -27,3 +30,6 @@ This repo is a companion repo to the [Use Modules from the Registry tutorial](ht
 * 'outputs.tf'
   * `module.moduleName.outputName`
     * way to refer to output values
+* '.terraform.modules/*'
+  * modules installed once you run `terraform init` OR `terraform get`
+  * if you use local modules -> symlinks are created

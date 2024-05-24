@@ -13,7 +13,7 @@ provider "aws" {
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "3.18.1"
+  version = "5.8.1"
 
   name = var.vpc_name
   cidr = var.vpc_cidr
@@ -29,7 +29,7 @@ module "vpc" {
 
 module "ec2_instances" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "4.3.0"
+  version = "5.6.1"
   count   = 2   # Terraform module's meta argument
 
   name = "my-ec2-cluster"
